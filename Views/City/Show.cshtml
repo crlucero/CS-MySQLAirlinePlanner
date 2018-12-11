@@ -1,0 +1,12 @@
+<h3>Here are all the flights in this city:</h3>
+
+<ol>
+@foreach (var flight in @Model["flights"])
+{
+  <li><a href='/cities/@Model["city"].GetId()/flights/@flight.GetId()'>@flight.GetDescription()</a></li>
+}
+</ol>
+
+<p><a href='/cities/flights/new'>Add a new flight</a></p>
+<p><a href='/cities'>Return to city list</a></p>
+<p><a href='/'>Return to Main Page</a></p>

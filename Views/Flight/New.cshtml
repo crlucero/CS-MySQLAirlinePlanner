@@ -1,0 +1,27 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+
+<h1>Add a new Flight</h1>
+
+<form action="/cities" method="post">
+  <label for="flightNumber">Flight Number:</label>
+  <input id="flightNumber" name="flightNumber" type="text">
+  <label for="departureCityId">departure City Id:</label>
+  <input id="departureCityId" name="departureCityId" type="text">
+  <label for="destinationCityId">Destination City Id</label>
+  <input id="destinationCityId" name="destinationCityId" type="text">
+  <label for="departureTime">departure Time</label>
+  <input id="departureTime" name="departureTime" type="text">
+  <label for="arrivalTime">Arrival Time:</label>
+  <input id="arrivalTime" name="arrivalTime" type="text">
+
+  <button type="submit">Add</button>
+</form>
+
+<p><a href="/">Back home</a></p>
+<p><a href="/cities">Back to Flights</a></p>
+
+</div>
